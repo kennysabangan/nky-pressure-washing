@@ -70,7 +70,7 @@ export const siteConfig = {
   brandColor: "#1a6bb5",
 
   // ── Hero content ─────────────────────────────────────────────────
-  heroTagline: "Northern Kentucky's Trusted Pressure Washing Service",
+  heroTagline: "Northern Kentucky Pressure Washing Service",
   heroSubtext: "Transform your home's curb appeal. Call us for a free estimate.",
   heroAlt: "Professional pressure washing technician cleaning a driveway",
 
@@ -115,7 +115,7 @@ export const siteConfig = {
     {
       question: "How much does pressure washing cost in Northern Kentucky?",
       answer:
-        "Most house washing jobs run between $200 and $500 depending on the size of your home and the level of buildup. Driveway cleaning typically costs $150 to $300. Give us a call at (859) 555-0200 for a free, no-obligation estimate — we can usually give you a ballpark price over the phone.",
+        "Pricing varies based on the size of your home and the level of buildup. We offer free, no-obligation estimates — call us at (859) 555-0200 for a quote over the phone.",
     },
     {
       question: "How often should I have my house pressure washed?",
@@ -178,7 +178,7 @@ export const siteConfig = {
       lat: "39.0458",
       lng: "-84.5533",
       intro:
-        "Fort Mitchell is one of Northern Kentucky's most desirable communities, and homeowners here expect a higher standard of service. NKY Pressure Washing Pros delivers exactly that. We specialize in the kind of meticulous, detail-oriented pressure washing that Fort Mitchell properties deserve — from the stately homes along Dixie Highway to the well-maintained colonials in the residential side streets. Our technicians are background-checked, fully insured, and trained to treat your home with the same respect they'd treat their own. Fort Mitchell residents choose us because we show up on time, do the job right, and leave every surface spotless.",
+        "Fort Mitchell is one of Northern Kentucky's most desirable communities, and homeowners here expect professional service. NKY Pressure Washing Pros delivers exactly that. We specialize in the kind of meticulous, detail-oriented pressure washing that Fort Mitchell properties deserve — from the stately homes along Dixie Highway to the well-maintained colonials in the residential side streets. Our technicians are background-checked, fully insured, and trained to treat your home with the same respect they'd treat their own. Fort Mitchell residents choose us because we show up on time, do the job right, and leave every surface spotless.",
     },
     {
       name: "Erlanger, KY",
@@ -234,7 +234,7 @@ export const siteConfig = {
       lat: "39.0114",
       lng: "-84.4369",
       intro:
-        "Cold Spring's rolling hills and spacious properties make it a beautiful place to live — but they also mean your exterior surfaces face constant exposure to the elements. NKY Pressure Washing Pros provides Cold Spring homeowners with thorough, professional pressure washing that removes dirt, algae, and seasonal buildup from siding, driveways, and decks. Whether your home overlooks Alexandria Pike or sits in one of Cold Spring's peaceful residential developments, we'll make sure your property looks its best. Our eco-friendly cleaning solutions are safe for your family, pets, and landscaping.",
+        "Cold Spring's rolling hills and spacious properties make it a beautiful place to live — but they also mean your exterior surfaces face constant exposure to the elements. NKY Pressure Washing Pros provides Cold Spring homeowners with thorough, professional pressure washing that removes dirt, algae, and seasonal buildup from siding, driveways, and decks. Whether your home overlooks Alexandria Pike or sits in one of Cold Spring's peaceful residential developments, we'll make sure your property looks its best. Our eco-friendly cleaning solutions are safe for your landscaping.",
     },
     {
       name: "Taylor Mill, KY",
@@ -250,7 +250,7 @@ export const siteConfig = {
       lat: "39.0625",
       lng: "-84.5916",
       intro:
-        "Villa Hills is one of Northern Kentucky's premier residential communities, and the homes here deserve nothing less than the best. NKY Pressure Washing Pros delivers premium pressure washing services that match Villa Hills' high standards. The city's elevated terrain and river-adjacent location mean your exterior surfaces face unique challenges — morning moisture, afternoon sun, and the organic growth that comes with proximity to the Ohio River floodplain. Our team is equipped to handle all of it, using professional-grade equipment and techniques that leave your siding, driveways, and patios truly spotless.",
+        "Villa Hills is one of Northern Kentucky's premier residential communities, and the homes here deserve quality service. NKY Pressure Washing Pros delivers premium pressure washing services that match Villa Hills' high standards. The city's elevated terrain and river-adjacent location mean your exterior surfaces face unique challenges — morning moisture, afternoon sun, and the organic growth that comes with proximity to the Ohio River floodplain. Our team is equipped to handle all of it, using professional-grade equipment and techniques that leave your siding, driveways, and patios truly spotless.",
     },
     {
       name: "Crescent Springs, KY",
@@ -307,7 +307,7 @@ export const siteConfig = {
       lat: "39.2289",
       lng: "-84.3541",
       intro:
-        "Montgomery's tree-canopied streets and stately homes make it one of the Cincinnati area's premier residential communities. NKY Pressure Washing Pros extends our premium pressure washing services to Montgomery homeowners who expect nothing but the best. The large lots, mature landscaping, and multi-story homes throughout Montgomery require a careful, experienced approach — and our team delivers exactly that. From historic properties near the downtown village center to sprawling estates on the outskirts, we bring the same meticulous attention to detail that has made us Northern Kentucky's most trusted pressure washing service.",
+        "Montgomery's tree-canopied streets and stately homes make it one of the Cincinnati area's premier residential communities. NKY Pressure Washing Pros extends our premium pressure washing services to Montgomery homeowners who expect quality service. The large lots, mature landscaping, and multi-story homes throughout Montgomery require a careful, experienced approach — and our team delivers exactly that. From historic properties near the downtown village center to sprawling estates on the outskirts, we bring the same meticulous attention to detail on every job.",
     },
     {
       name: "Deer Park, OH",
@@ -355,7 +355,7 @@ export const siteConfig = {
       lat: "39.1283",
       lng: "-84.4317",
       intro:
-        "Mt. Lookout is a charming, walkable neighborhood on Cincinnati's east side, just across the river from Northern Kentucky. NKY Pressure Washing Pros serves Mt. Lookout homeowners with professional pressure washing that keeps homes looking their best. The neighborhood's mix of older bungalows, updated colonials, and new construction means we've seen every exterior surface type Mt. Lookout has to offer. We use eco-friendly cleaning solutions that are safe for your family, pets, and landscaping — perfect for homes along the tree-lined streets of this beloved Cincinnati neighborhood.",
+        "Mt. Lookout is a charming, walkable neighborhood on Cincinnati's east side, just across the river from Northern Kentucky. NKY Pressure Washing Pros serves Mt. Lookout homeowners with professional pressure washing that keeps homes looking their best. The neighborhood's mix of older bungalows, updated colonials, and new construction means we've seen every exterior surface type Mt. Lookout has to offer. We use eco-friendly cleaning solutions that are safe for your landscaping — perfect for homes along the tree-lined streets of this Cincinnati neighborhood.",
     },
     {
       name: "Oakley, OH",
@@ -379,7 +379,7 @@ export const siteConfig = {
       lat: "39.1842",
       lng: "-84.4403",
       intro:
-        "Pleasant Ridge is a vibrant, family-friendly neighborhood on Cincinnati's north side, known for its well-kept homes and strong community spirit. NKY Pressure Washing Pros is happy to extend our pressure washing services to Pleasant Ridge residents who want a clean, well-maintained exterior without the hassle. The neighborhood's diverse housing stock — from classic foursquares to updated ranches — means we adapt our approach to each property. Our team is fast, friendly, and thorough, leaving your home looking its best every single time.",
+        "Pleasant Ridge is a vibrant, family-friendly neighborhood on Cincinnati's north side, known for its well-kept homes and strong community spirit. NKY Pressure Washing Pros is happy to extend our pressure washing services to Pleasant Ridge residents who want a clean, well-maintained exterior without the hassle. The neighborhood's diverse housing stock — from classic foursquares to updated ranches — means we adapt our approach to each property. Our team is fast, friendly, and thorough, leaving your home looking great every time.",
     },
   ] as City[],
 
@@ -399,7 +399,7 @@ export const siteConfig = {
     },
     {
       quote:
-        "Finally found a pressure washing company that actually shows up when they say they will. The team was fast, friendly, and our Fort Mitchell home has never looked this good. Best pressure washing in Northern Kentucky.",
+        "Finally found a pressure washing company that actually shows up when they say they will. The team was fast, friendly, and our Fort Mitchell home has never looked this good. Professional pressure washing service in Northern Kentucky.",
       name: "Sarah K.",
       city: "Fort Mitchell, KY",
     },
@@ -416,7 +416,7 @@ export const siteConfig = {
     {
       name: "Jennifer M.",
       location: "Florence, KY",
-      text: "These guys pressure washed our entire house and driveway and everything looks amazing. We have a two-story home in Florence and they cleaned every surface, no problem. The team was friendly and worked fast. Best pressure washing service we've ever used in Northern Kentucky.",
+      text: "These guys pressure washed our entire house and driveway and everything looks amazing. We have a two-story home in Florence and they cleaned every surface, no problem. The team was friendly and worked fast. Professional pressure washing service we've used in Northern Kentucky.",
     },
     {
       name: "Robert T.",
@@ -426,7 +426,7 @@ export const siteConfig = {
     {
       name: "Sarah K.",
       location: "Fort Mitchell, KY",
-      text: "I've tried three different pressure washing companies in Northern Kentucky and these guys are by far the best. They showed up on time, worked quickly, and left every surface spotless. Our house in Fort Mitchell looks so much better with clean siding and a bright driveway.",
+      text: "I've tried three different pressure washing companies in Northern Kentucky and these guys do excellent work. They showed up on time, worked quickly, and left every surface spotless. Our house in Fort Mitchell looks so much better with clean siding and a bright driveway.",
     },
     {
       name: "Mike D.",
@@ -441,7 +441,7 @@ export const siteConfig = {
     {
       name: "Dave S.",
       location: "Newport, KY",
-      text: "Called for pressure washing on our home in Newport. They gave us a fair price over the phone and came out the same week. Siding, driveway, and patio all cleaned. They even removed the mold from our shaded side of the house. Great service, great price.",
+      text: "Called for pressure washing on our home in Newport. They came out the same week. Siding, driveway, and patio all cleaned. They even removed the mold from our shaded side of the house. Great service.",
     },
     {
       name: "Karen L.",
@@ -451,7 +451,7 @@ export const siteConfig = {
     {
       name: "Tom W.",
       location: "Fort Thomas, KY",
-      text: "Our Fort Thomas home sits on a hill and gets a lot of green algae on the north-facing siding. These guys pressure washed the whole house in about two hours. Every surface is clean and bright. They were careful with our landscaping and cleaned up after themselves. Best pressure washing in NKY.",
+      text: "Our Fort Thomas home sits on a hill and gets a lot of green algae on the north-facing siding. These guys pressure washed the whole house in about two hours. Every surface is clean and bright. They were careful with our landscaping and cleaned up after themselves. Professional pressure washing in NKY.",
     },
   ] as { name: string; location: string; text: string }[],
 };
