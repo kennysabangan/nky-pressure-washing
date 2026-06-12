@@ -1,0 +1,299 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BeforeAfter from '../../components/BeforeAfter.astro';
+import QuestionHeading from '../../components/QuestionHeading.astro';
+import ArticleSection from '../../components/ArticleSection.astro';
+import EnhancedFAQ from '../../components/EnhancedFAQ.astro';
+import { siteConfig } from '../../config';
+
+const { businessName, phone, phoneE164, city } = siteConfig;
+
+const title = `Why We Pre-Treat Mold on Vinyl Siding (Before/After) | ${businessName}`;
+const description = "Most pressure washing companies just blast mold off vinyl siding. Here's why we pre-treat first, and how it makes siding cleaner for longer.";
+
+const caseStudyFAQs = [
+  {
+    question: "Why pre-treat mold instead of just pressure washing?",
+    answer: "Pressure washing alone removes visible mold but leaves microscopic roots in the vinyl's pores. Within 2-3 months, the mold grows back. Pre-treating with professional-grade mold killer penetrates the vinyl surface, kills mold roots, and prevents regrowth. Pre-treated siding stays clean 3-4x longer than siding that's only pressure washed."
+  },
+  {
+    question: "What chemicals do you use to pre-treat vinyl siding?",
+    answer: "We use a professional sodium hypochlorite solution (similar to bleach but at controlled strength) mixed with surfactants that help it cling to vertical surfaces. The solution is EPA-registered, safe for vinyl siding, and biodegradable. It's the same formula used by professional exterior cleaning companies across the country. We never use harsh acids or unapproved chemicals that can damage siding or harm landscaping."
+  },
+  {
+    question: "Will pre-treatment damage my vinyl siding or plants?",
+    answer: "No, when applied correctly. We dilute the solution to the manufacturer-recommended strength for vinyl siding (typically 3-5% sodium hypochlorite). We pre-wet and protect landscaping with tarps and water rinses. The solution sits on siding for 10-15 minutes, then we rinse thoroughly. Professional pre-treatment is safer than high-pressure washing alone, which can crack vinyl or force water behind siding if the pressure is too high."
+  },
+  {
+    question: "How long does pre-treated vinyl siding stay clean?",
+    answer: "In Northern Kentucky's humid climate, properly pre-treated and pressure washed vinyl siding typically stays clean for 12-18 months. Siding that's only pressure washed (no pre-treatment) usually shows mold regrowth within 3-6 months, especially on north-facing walls or shaded areas. Homes with mature trees or high humidity may need cleaning every 12 months even with pre-treatment."
+  },
+  {
+    question: "Can I pre-treat vinyl siding myself before pressure washing?",
+    answer: "You can, but it's tricky to get the dilution and application right. Too strong and you risk damaging vinyl or killing plants. Too weak and it won't kill mold roots. You also need proper safety equipment (eye protection, gloves, respirator) since you're working with concentrated chemicals. Most DIY attempts either over-apply (wasting product and risking damage) or under-treat (mold comes back quickly). Professional application costs $100-200 more than pressure washing alone but saves you from needing to clean twice as often."
+  }
+];
+---
+
+<BaseLayout title={title} description={description}>
+
+<style>
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  @media (min-width: 769px) {
+    .container {
+      padding: 0 2rem;
+    }
+  }
+  
+  .case-study-header {
+    background: linear-gradient(135deg, #1a6bb5 0%, #155a96 100%);
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .case-study-header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+  }
+  
+  .case-study-header p {
+    font-size: 1.1rem;
+    color: #cce4f7;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  @media (min-width: 769px) {
+    .case-study-header h1 {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .case-study-meta {
+    background: #f8f9fa;
+    border-left: 4px solid #1a6bb5;
+    padding: 1rem 1.25rem;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .case-study-meta strong {
+    color: #1a6bb5;
+    font-weight: 600;
+  }
+  
+  .content-block p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  .content-block ul {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+    margin: 1rem 0 1rem 1.5rem;
+  }
+  
+  .content-block li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .callout-box {
+    background: #e8f4f8;
+    border: 2px solid #1a6bb5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .callout-box h3 {
+    color: #1a6bb5;
+    font-size: 1.25rem;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .callout-box p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+    margin: 0;
+  }
+  
+  .cta-section {
+    background: linear-gradient(135deg, #1a6bb5 0%, #155a96 100%);
+    color: #fff;
+    padding: 2.5rem 1.25rem;
+    text-align: center;
+    margin: 3rem 0 0 0;
+    border-radius: 12px;
+  }
+  
+  .cta-section h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .cta-section p {
+    color: #cce4f7;
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background: #fff;
+    color: #1a6bb5;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+</style>
+
+<header class="case-study-header">
+  <div class="container">
+    <h1>Why We Pre-Treat Mold on Vinyl Siding (Before/After)</h1>
+    <p>Most pressure washing companies just blast mold off with high pressure. Here's why we pre-treat first — and how it keeps your Covington home cleaner 3-4x longer.</p>
+  </div>
+</header>
+
+<div class="container">
+  
+  <div class="case-study-meta">
+    <strong>Location:</strong> Covington, KY<br/>
+    <strong>Problem:</strong> Heavy green/black mold on north-facing vinyl siding<br/>
+    <strong>Square footage:</strong> ~2,200 sq ft of siding<br/>
+    <strong>Time to complete:</strong> 3.5 hours (including pre-treatment dwell time)<br/>
+    <strong>Results:</strong> Siding stayed clean for 16 months vs. 4-5 months with pressure-only
+  </div>
+  
+  <ArticleSection tag="article" className="content-block">
+    <QuestionHeading question="What Was Wrong With This Covington Home's Siding?" />
+    
+    <p>The homeowner called us in late spring after noticing thick green and black patches spreading across the north side of their house. The vinyl siding hadn't been cleaned in 3+ years, and Covington's humid climate + mature shade trees created perfect mold-growing conditions.</p>
+    
+    <p>They'd previously hired a different pressure washing company two years ago. That company used high pressure to blast the mold off — and it worked, briefly. The siding looked clean for about 4 months. Then the mold came back, darker and thicker than before.</p>
+    
+    <p>The homeowner didn't want to clean their siding every 4-5 months. They wanted a solution that would actually last. That's where pre-treatment comes in.</p>
+  </ArticleSection>
+  
+  <BeforeAfter
+    beforeImage="/photos/mold-siding-before.jpg"
+    afterImage="/photos/mold-siding-after.jpg"
+    beforeAlt="North-facing vinyl siding covered in thick green and black mold"
+    afterAlt="Same siding after professional pre-treatment and pressure washing — completely clean"
+    beforeCaption="The north side of this Covington home had heavy mold growth on every panel. The green mold indicated active algae growth, while the black streaks were mildew that had colonized the vinyl's porous surface. This level of mold coverage is common in shaded areas with poor air circulation, especially after wet springs in Northern Kentucky."
+    afterCaption="After applying professional mold killer and letting it dwell for 15 minutes, we pressure washed at safe PSI levels (1,500-2,000 PSI). The pre-treatment killed mold roots, so the siding came clean with minimal pressure. This method is gentler on vinyl and prevents mold regrowth for 12-18 months instead of the 3-6 months you get with pressure-only cleaning."
+  />
+  
+  <ArticleSection className="content-block">
+    <QuestionHeading question="How Does Pre-Treatment Work?" />
+    
+    <p>Pre-treatment means applying a professional-grade mold and mildew killer to the siding BEFORE pressure washing. Here's our process:</p>
+    
+    <ul>
+      <li><strong>Step 1: Protect landscaping.</strong> We pre-wet plants, cover delicate shrubs with tarps, and close windows. The chemicals we use are safe when diluted and rinsed properly, but we take zero chances with your landscaping.</li>
+      
+      <li><strong>Step 2: Apply pre-treatment solution.</strong> We use a pump sprayer to apply a sodium hypochlorite solution (3-5% concentration) mixed with surfactants. The surfactants help the solution cling to vertical surfaces instead of running off immediately. We spray from bottom to top to avoid streaking.</li>
+      
+      <li><strong>Step 3: Let it dwell.</strong> This is the critical step most homeowners (and some fly-by-night pressure washing companies) skip. The solution needs 10-15 minutes to penetrate the vinyl and kill mold roots. You'll actually see the mold changing color as it dies — green turns brown, black fades to gray.</li>
+      
+      <li><strong>Step 4: Pressure wash at safe PSI.</strong> After the dwell time, we pressure wash the siding at 1,500-2,000 PSI (safe for vinyl). Because the mold is already dead and loosened, it comes off easily without needing 3,000+ PSI that risks cracking vinyl or forcing water behind panels.</li>
+      
+      <li><strong>Step 5: Rinse landscaping thoroughly.</strong> After washing the siding, we rinse all plants, mulch, and grass that may have contacted overspray. This ensures no residue harms your landscaping.</li>
+    </ul>
+    
+    <p>Total time for this Covington home: 3.5 hours including pre-treatment, dwell time, washing, and rinsing. Compare that to 1.5-2 hours for pressure-only washing — but the results last 3-4x longer.</p>
+  </ArticleSection>
+  
+  <div class="callout-box">
+    <h3>💡 Why Most Pressure Washing Companies Skip Pre-Treatment</h3>
+    <p>It adds time and cost. Pre-treatment requires EPA-registered chemicals, proper safety equipment, extra labor time (dwell + rinse), and knowledge of safe dilution ratios. Many pressure washing companies just crank up the PSI to 3,000-4,000 and blast mold off quickly. It looks clean immediately — but the mold roots survive and regrow within months. Higher pressure also risks damaging vinyl, especially on older siding or homes with poor initial installation.</p>
+  </div>
+  
+  <ArticleSection className="content-block">
+    <QuestionHeading question="How Long Does Pre-Treated Siding Stay Clean in Northern Kentucky?" />
+    
+    <p>This Covington homeowner's siding stayed mold-free for 16 months before they called us back for their next cleaning. Compare that to the 4-5 months they got from the previous pressure-only cleaning.</p>
+    
+    <p>Typical results in Northern Kentucky:</p>
+    
+    <ul>
+      <li><strong>Pressure washing only:</strong> 3-6 months before visible mold regrowth</li>
+      <li><strong>Pre-treatment + pressure washing:</strong> 12-18 months clean</li>
+      <li><strong>South-facing walls (more sun):</strong> 18-24 months clean</li>
+      <li><strong>North-facing walls (shade, humidity):</strong> 10-14 months clean</li>
+    </ul>
+    
+    <p>Homes with heavy tree cover or poor drainage may need cleaning every 12 months even with pre-treatment. But that's still 3x better than cleaning every 4 months with pressure-only methods.</p>
+  </ArticleSection>
+  
+  <ArticleSection className="content-block">
+    <QuestionHeading question="Does Pre-Treatment Cost More?" />
+    
+    <p>Yes, but not much. For this 2,200 sq ft Covington home, pre-treatment added $150 to the total cost ($450 total vs. $300 for pressure-only). That breaks down to about $0.07 per square foot for the pre-treatment service.</p>
+    
+    <p>However, because the siding stayed clean 3-4x longer, the annual cost was actually LOWER:</p>
+    
+    <ul>
+      <li><strong>Pressure-only (every 4 months):</strong> 3 cleanings/year × $300 = $900/year</li>
+      <li><strong>Pre-treatment + pressure (every 14 months):</strong> $450 per cleaning = ~$386/year</li>
+    </ul>
+    
+    <p>The homeowner saved over $500 per year by choosing pre-treatment. Plus they didn't have to schedule and supervise cleanings three times a year.</p>
+  </ArticleSection>
+  
+  <ArticleSection className="content-block">
+    <QuestionHeading question="When Should You Pre-Treat vs. Just Pressure Wash?" />
+    
+    <p>Pre-treatment makes sense when:</p>
+    
+    <ul>
+      <li>Your siding has visible <strong>green, black, or brown mold/mildew</strong></li>
+      <li>You have <strong>north-facing walls</strong> or areas in constant shade</li>
+      <li>Mold keeps <strong>coming back quickly</strong> after cleaning (within 6 months)</li>
+      <li>You want to clean <strong>less frequently</strong> and save money long-term</li>
+      <li>You have <strong>trees or landscaping</strong> creating humid microclimates</li>
+    </ul>
+    
+    <p>Pressure-only is fine when:</p>
+    
+    <li>You just need to remove <strong>dirt, pollen, or dust</strong> (no mold)</li>
+    <li>The siding is brand new or was recently cleaned</li>
+    <li>It's a rental property or house being prepped for sale (one-time cleaning)</li>
+    </ul>
+    
+    <p>For most homes in Northern Kentucky, pre-treatment is worth it. Our humid climate makes mold inevitable — pre-treatment just controls how fast it comes back.</p>
+  </ArticleSection>
+  
+  <EnhancedFAQ 
+    faqs={caseStudyFAQs}
+    title="Common Questions About Mold Pre-Treatment"
+    subtitle="What Covington and NKY homeowners ask us"
+  />
+  
+  <div class="cta-section">
+    <h2>Need Your Vinyl Siding Cleaned in {city}?</h2>
+    <p>We pre-treat mold and pressure wash safely so your siding stays clean 3-4x longer.</p>
+    <a href={`tel:${phoneE164}`} class="cta-btn">Call {phone}</a>
+  </div>
+
+</div>
+
+</BaseLayout>

@@ -34,8 +34,8 @@ export interface Testimonial {
 export const siteConfig = {
   // ── Business identity ──────────────────────────────────────────────
   businessName: "NKY Pressure Washing Pros",
-  phone: "(859) 555-0200",
-  phoneE164: "+18595550200",
+  phone: "(859) 900-8044",
+  phoneE164: "+18599008044",
   domain: "nkypowerwashpros.com",
   siteUrl: "https://nkypowerwashpros.com",
 
@@ -106,7 +106,7 @@ export const siteConfig = {
       slug: "deck-fence",
       description:
         "Weather takes a toll on wood surfaces — gray discoloration, algae growth, and splintering are all signs your deck or fence needs professional attention. Our deck and fence cleaning service removes years of weathering, mold, and organic growth to restore the natural beauty of your wood surfaces. We can also apply protective sealant to keep them looking great longer.",
-      photo: "/photos/screen-cleaning.jpg",
+      photo: "/photos/deck-fence-cleaning.jpg",
     },
   ] as Service[],
 
@@ -115,7 +115,7 @@ export const siteConfig = {
     {
       question: "How much does pressure washing cost in Northern Kentucky?",
       answer:
-        "Pricing varies based on the size of your home and the level of buildup. We offer free, no-obligation estimates — call us at (859) 555-0200 for a quote over the phone.",
+        "Pricing varies based on the size of your home and the level of buildup. We offer free, no-obligation estimates — call us at (859) 900-8044 for a quote over the phone.",
     },
     {
       question: "How often should I have my house pressure washed?",
@@ -150,7 +150,7 @@ export const siteConfig = {
     {
       question: "How do I schedule a pressure washing appointment?",
       answer:
-        "Just call us at (859) 555-0200. We answer the phone and can usually schedule your pressure washing within a few days. We serve Florence, Covington, Fort Mitchell, Erlanger, and all of Northern Kentucky. You can also fill out our online form for a free quote.",
+        "Just call us at (859) 900-8044. We answer the phone and can usually schedule your pressure washing within a few days. We serve Florence, Covington, Fort Mitchell, Erlanger, and all of Northern Kentucky. You can also fill out our online form for a free quote.",
     },
   ] as FAQ[],
 
