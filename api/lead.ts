@@ -21,11 +21,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     timeStyle: 'short',
   });
 
+  const errors: string[] = [];
+
   try {
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: `NKY Pressure Washing Pros <lead@scalesolving.com>`,
       to: ['hello@scalesolving.com'],
-      subject: `New Lead: ${fullName}` + (page_path && page_path !== '/' ? ` — ${page_path}` : ''),
+      subject: `New Lead: ${fullName}` + (page_path && page_path !== '/' ? ` - ${page_path}` : ''),
       html: `<h2>New Lead from NKY Pressure Washing Pros</h2>
 <p><strong>Name:</strong> ${fullName}</p>
 <p><strong>Email:</strong> ${email}</p>
@@ -34,12 +36,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 <p><strong>Page:</strong> ${page_path || 'Unknown'}</p>
 <p><strong>Time:</strong> ${timestamp}</p>`,
     });
+    console.log('Owner email result:', JSON.stringify(result));
   } catch (error: any) {
-    console.error('Resend error (owner):', error);
+    console.error('Resend error (owner):', JSON.stringify(error));
+    errors.push(`Owner: ${error.message}`);
   }
 
   try {
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: `NKY Pressure Washing Pros <lead@scalesolving.com>`,
       to: [email],
       subject: `Thanks ${first_name}! We received your quote request`,
@@ -48,8 +52,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 <p>If you need immediate assistance, call us at <strong>(859) 900-8065</strong>.</p>
 <p>— The NKY Pressure Washing Pros Team</p>`,
     });
+    console.log('Customer email result:', JSON.stringify(result));
   } catch (error: any) {
-    console.error('Resend error (customer):', error);
+    console.error('Resend error (customer):', JSON.stringify(error));
+    errors.push(`Customer: ${error.message}`);
+  }
+
+  if (errors.length > 0) {
+    return res.status(500).json({ ok: false, errors });
   }
 
   return res.status(200).json({ ok: true });
