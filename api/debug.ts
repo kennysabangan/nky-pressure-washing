@@ -10,3 +10,4 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     charCodes: key ? Array.from(key).slice(-5).map(c => c.charCodeAt(0)) : [],
   });
 }
+
