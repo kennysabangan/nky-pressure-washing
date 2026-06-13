@@ -21,10 +21,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     timeStyle: 'short',
   });
 
-  // Email to business owner (hello@scalesolving.com)
   try {
     await resend.emails.send({
-      from: `${site_name} Alerts <lead@scalesolving.com>`,
+      from: `${site_name} <lead@scalesolving.com>`,
       to: ['hello@scalesolving.com'],
       subject: `New Lead: ${fullName}` + (page_path && page_path !== '/' ? ` — ${page_path}` : ''),
       html: `<h2>New Lead from ${site_name}</h2>
@@ -39,7 +38,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     console.error('Resend error (owner):', error);
   }
 
-  // Confirmation email to customer
   try {
     await resend.emails.send({
       from: `${site_name} <lead@scalesolving.com>`,
