@@ -27,6 +27,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const result = await resend.emails.send({
       from: `NKY Pressure Washing Pros <lead@scalesolving.com>`,
       to: ['hello@scalesolving.com'],
+      cc: ['mursenmaintenance@gmail.com'],
       subject: `New Lead: ${fullName}` + (page_path && page_path !== '/' ? ` - ${page_path}` : ''),
       html: `<h2>New Lead from NKY Pressure Washing Pros</h2>
 <p><strong>Name:</strong> ${fullName}</p>
