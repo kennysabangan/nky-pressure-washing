@@ -462,9 +462,7 @@ const faqSchema = {
         return resp.json();
       })
       .then(function() {
-        if (typeof gtag === 'function') {
-          gtag('event', 'generate_lead', { event_category: 'conversion', event_label: 'quote_form' });
-        }
+        if (window.nkyTrack) window.nkyTrack('generate_lead', { form: 'home' });
         var card = document.querySelector('.form-card');
         if (card) {
           card.innerHTML = '<div style="text-align:center;padding:48px 24px;">' +

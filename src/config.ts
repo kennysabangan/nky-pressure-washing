@@ -41,8 +41,8 @@ export interface Guide {
 export const siteConfig = {
   // ── Business identity ──────────────────────────────────────────────
   businessName: "NKY Pressure Washing Pros",
-  phone: "(859) 900-8044",
-  phoneE164: "+18599008044",
+  phone: "(714) 494-9486",
+  phoneE164: "+17144949486",
   domain: "nkypowerwashpros.com",
   siteUrl: "https://nkypowerwashpros.com",
 
@@ -135,7 +135,7 @@ export const siteConfig = {
     {
       question: "How much does pressure washing cost in Northern Kentucky?",
       answer:
-        "Pricing varies based on the size of your home and the level of buildup. We offer free, no-obligation estimates — call us at (859) 900-8044 for a quote over the phone.",
+        "Pricing varies based on the size of your home and the level of buildup. We offer free, no-obligation estimates — call us at (714) 494-9486 for a quote over the phone.",
     },
     {
       question: "How often should I have my house pressure washed?",
@@ -170,7 +170,7 @@ export const siteConfig = {
     {
       question: "How do I schedule a pressure washing appointment?",
       answer:
-        "Just call us at (859) 900-8044. We answer the phone and can usually schedule your pressure washing within a few days. We serve Florence, Covington, Fort Mitchell, Erlanger, and all of Northern Kentucky. You can also fill out our online form for a free quote.",
+        "Just call us at (714) 494-9486. We answer the phone and can usually schedule your pressure washing within a few days. We serve Florence, Covington, Fort Mitchell, Erlanger, and all of Northern Kentucky. You can also fill out our online form for a free quote.",
     },
   ] as FAQ[],
 
