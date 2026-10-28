@@ -1,9 +1,44 @@
 {
   "redirects": [
-    { "source": "/pressure-washing/:city(bellevue-ky|cold-spring-ky|taylor-mill-ky|villa-hills-ky|crescent-springs-ky|lakeside-park-ky|park-hills-ky|walnut-hills-oh|hyde-park-oh|norwood-oh|montgomery-oh|deer-park-oh|amberly-oh|westwood-oh|fort-heights-oh|mt-adams-oh|mt-lookout-oh|oakley-oh|columbia-tusculum-oh|pleasant-ridge-oh)", "destination": "/pressure-washing/", "permanent": true },
-    { "source": "/pressure-washing/:city(bellevue-ky|cold-spring-ky|taylor-mill-ky|villa-hills-ky|crescent-springs-ky|lakeside-park-ky|park-hills-ky|walnut-hills-oh|hyde-park-oh|norwood-oh|montgomery-oh|deer-park-oh|amberly-oh|westwood-oh|fort-heights-oh|mt-adams-oh|mt-lookout-oh|oakley-oh|columbia-tusculum-oh|pleasant-ridge-oh)/", "destination": "/pressure-washing/", "permanent": true },
-    { "source": "/case-studies/mold-pretreatment-vinyl-siding/:rest*", "destination": "/guides/pre-treating-mold-on-vinyl-siding/", "permanent": true },
-    { "source": "/case-studies/:rest*", "destination": "/guides/", "permanent": true },
-    { "source": "/reviews/:rest*", "destination": "/", "permanent": true }
+    {
+      "source": "/pressure-washing/:city(bellevue-ky|cold-spring-ky|taylor-mill-ky|villa-hills-ky|crescent-springs-ky|lakeside-park-ky|park-hills-ky|walnut-hills-oh|hyde-park-oh|norwood-oh|montgomery-oh|deer-park-oh|amberly-oh|westwood-oh|fort-heights-oh|mt-adams-oh|mt-lookout-oh|oakley-oh|columbia-tusculum-oh|pleasant-ridge-oh)",
+      "destination": "/pressure-washing/",
+      "permanent": true
+    },
+    {
+      "source": "/pressure-washing/:city(bellevue-ky|cold-spring-ky|taylor-mill-ky|villa-hills-ky|crescent-springs-ky|lakeside-park-ky|park-hills-ky|walnut-hills-oh|hyde-park-oh|norwood-oh|montgomery-oh|deer-park-oh|amberly-oh|westwood-oh|fort-heights-oh|mt-adams-oh|mt-lookout-oh|oakley-oh|columbia-tusculum-oh|pleasant-ridge-oh)/",
+      "destination": "/pressure-washing/",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/mold-pretreatment-vinyl-siding/:rest*",
+      "destination": "/guides/pre-treating-mold-on-vinyl-siding/",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/mold-pretreatment-vinyl-siding/:rest*/",
+      "destination": "/guides/pre-treating-mold-on-vinyl-siding/",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/:rest*",
+      "destination": "/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/:rest*/",
+      "destination": "/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/:rest*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/:rest*/",
+      "destination": "/",
+      "permanent": true
+    }
   ]
 }
