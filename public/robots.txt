@@ -26,4 +26,4 @@ Allow: /
 User-agent: Bytespider
 Disallow: /
 
-Sitemap: https://nkypowerwashpros.com/sitemap-index.xml
+Sitemap: https://www.nkypowerwashpros.com/sitemap-index.xml
