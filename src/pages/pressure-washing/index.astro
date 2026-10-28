@@ -14,7 +14,7 @@ const serviceSchema = {
     "name": businessName,
     "telephone": phoneE164,
   },
-  "areaServed": { "@type": "State", "name": "Kentucky" },
+  "areaServed": cities.map((c) => ({ "@type": "City", "name": c.name })),
   "description": `Professional ${serviceKeywordPlural} for residential and commercial properties in ${city}.`,
 };
 
@@ -29,7 +29,7 @@ const breadcrumbSchema = {
 ---
 
 <BaseLayout
-  title={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Services ${city} | ${businessName}`}
+  title={`Pressure Washing Service Areas in Northern Kentucky | ${businessName}`}
   description={`${serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} services in ${city}. We provide ${serviceKeywordPlural} on homes, offices, and commercial buildings across ${region}. Call ${phone} for a free estimate.`}
   canonicalURL={`${siteUrl}/pressure-washing/`}
   schema={[breadcrumbSchema, serviceSchema]}
@@ -39,7 +39,7 @@ const breadcrumbSchema = {
 <section class="hero-section">
   <div class="container">
     <h1>{serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Services in {city}</h1>
-    <p class="hero-sub">Residential {serviceKeyword}, commercial {serviceKeyword}, and more. Serving all of {region}.</p>
+    <p class="hero-sub">House washing, concrete cleaning, and deck and fence cleaning for homes and businesses across {region}.</p>
     <PhoneCTA />
   </div>
 </section>
@@ -78,15 +78,15 @@ const breadcrumbSchema = {
 
   <p><strong>Step 1: Call Us.</strong> Give us a call at {phone} and tell us about the surfaces you need cleaned. We'll ask about the size of the job and what type of cleaning you need.</p>
 
-  <p><strong>Step 2: Get Your Free Estimate.</strong> We'll give you a clear, upfront price for your {serviceKeyword}. No hidden fees, no surprises. Most homeowners are surprised at how affordable professional {serviceKeyword} can be.</p>
+  <p><strong>Step 2: Get Your Free Estimate.</strong> You'll get a clear price before any work starts, based on the surfaces, their size, and how much buildup there is.</p>
 
   <p><strong>Step 3: We Pressure Wash Your Property.</strong> Our team arrives on time with all the equipment and supplies needed to get the job done. We work efficiently and treat your property with respect.</p>
 
-  <p><strong>Step 4: Enjoy the Results.</strong> Your siding, driveway, deck, and other surfaces will look like new. Not happy with the results? We'll come back and re-clean for free. That's our satisfaction guarantee.</p>
+  <p><strong>Step 4: Walk-Through.</strong> Before the crew leaves, look the work over with them. Anything missed gets touched up on the spot.</p>
 
   <h2 class="text-brand text-xl md:text-2xl font-bold mb-4 mt-8">{serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} Service Areas</h2>
 
-  <p>We provide {serviceKeywordPlural} across {city}. We serve:</p>
+  <p>Our main service areas in Boone, Kenton, and Campbell counties:</p>
 
   <ul>
     {cities.map((c) => (
@@ -108,7 +108,7 @@ const breadcrumbSchema = {
 <section class="bg-brand-dark text-white">
   <div class="cta-strip container">
     <h2 class="text-white text-xl md:text-2xl font-bold mb-2">Call Now for {serviceKeyword.charAt(0).toUpperCase() + serviceKeyword.slice(1)} in {city}</h2>
-    <p class="text-white/90 text-base mb-4">We provide ${serviceKeywordPlural} across {region}.</p>
+    <p class="text-white/90 text-base mb-4">We provide {serviceKeywordPlural} across {region}.</p>
     <PhoneCTA label="Call Now" />
   </div>
 </section>
